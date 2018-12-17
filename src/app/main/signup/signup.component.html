@@ -1,0 +1,13 @@
+<div class="signup-page">
+  <div class="form">
+    <form class="signup-form">
+      <input type="text" #username id="username" username.value='' placeholder="User ID"/>
+      <input type="password" #password id="password" password.value='' placeholder="Password"/>
+      <input type="text" #firstname id="firstname" firstname.value='' placeholder="First Name"/>
+      <input type="text" #lastname id="lastname" lastname.value='' placeholder="Surname"/>
+      <input type="text" #mobile id="mobile" mobile.value='' placeholder="Mobile"/>
+      <input type="text" #email id="email" email.value='' placeholder="Email"/>
+      <button [routerLink]="['/login']" type="submit" class="btn btn-block btn-success" (click)="onSignupClick(username.value, password.value, firstname.value, lastname.value, mobile.value, email.value)">Sign Up</button>
+    </form >
+  </div>
+</div>

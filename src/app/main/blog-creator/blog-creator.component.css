@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+#forms{
+    width:400px;
+    margin:auto;
+}
+#title_form, #category_form{
+    width:400px;
+}
+#title{
+    font-style: italic;
+}
+form  { display: table;      }
+p     { display: table-row;  padding-bottom: 10px;}
+label { display: table-cell; text-align: left;}
+input { display: table-cell; width:100%;}
+select { display: table-cell; width:100%;}

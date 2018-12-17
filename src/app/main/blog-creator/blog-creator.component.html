@@ -1,0 +1,26 @@
+<h1>Write your blog!</h1>
+<div id="forms">
+  <div>
+    <form id="title_form">
+      <p>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" value="Enter title here" [(ngModel)]="this.blog.title">
+      </p>
+    </form>
+  </div>
+  <div>
+    <form id="category_form">
+      <p>
+        <label for="title">Category:</label>
+        <select id="category" [(ngModel)]="this.blog.category" name="category">
+          <option value="default">Default</option>
+        </select>
+      </p>
+    </form>
+  </div>
+  <app-ngx-editor height="300px" [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="this.blog.content" id="text_editor"></app-ngx-editor>
+  <div>
+    <button type="submit" (click)="submitBlog()">Submit</button>
+    <button type="reset" (click)="resetBlog()">Reset</button>
+  </div>
+</div>

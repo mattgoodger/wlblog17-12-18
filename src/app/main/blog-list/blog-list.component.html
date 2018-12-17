@@ -1,0 +1,14 @@
+<p>blogs</p>
+<table>
+  <tr>
+    <td *ngFor="let blog of listOfBlogs">
+      {{blog.title}}
+      <p>{{blog.content}}</p>
+    </td>
+  </tr>
+  <tr *ngIf="listOfBlogs.length == 0">
+    <td>
+      No Blogs Found!
+    </td>
+  </tr>
+</table>
